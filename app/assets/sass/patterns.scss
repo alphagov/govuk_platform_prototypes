@@ -1,0 +1,58 @@
+// GOV.UK front end toolkit dependencies
+@import "colours";
+@import "shims";
+@import "measurements";
+@import "typography";
+@import "css3";
+@import "url-helpers";
+
+// Patterns
+@import 'patterns/check-your-answers';
+
+
+#global-header-bar{
+  display: none;
+}
+
+.full-width-container {
+   @extend %outdent-to-full-width;
+   background: $govuk-blue;
+   padding: 45px 15px;
+   margin-bottom: 45px;
+   h1{
+    max-width: 960px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: $white;
+    @include bold-36;
+   }
+}
+
+a[href="#"]:visited{
+  color: $link-colour;
+}
+
+
+.section-heading{
+  @include bold-24;
+  margin-top: $gutter;
+  border-bottom: 1px solid $border-colour;
+}
+
+.browse-item{
+  .heading-medium{
+    margin-top: $gutter;
+  }
+}
+
+
+.featured-item{
+
+  .featured-item-image img{
+    width: 100%;
+  }
+  .featured-item-description h3{
+    margin-top: 0
+  }
+}
