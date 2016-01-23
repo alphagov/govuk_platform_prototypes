@@ -1,14 +1,4 @@
-# GOV.UK Prototype kit
-
-The kit provides a simple way to make interactive prototypes that look like pages on GOV.UK. These prototypes can be used to show ideas to people you work with, and to do user research.
-
-It's built on the [Express](http://expressjs.com/) framework, and uses these GOV.UK resources:
-
-- [GOV.UK template](https://github.com/alphagov/govuk_template)
-- [GOV.UK front end toolkit](https://github.com/alphagov/govuk_frontend_toolkit)
-- [GOV.UK elements](https://github.com/alphagov/govuk_elements)
-
-Read the [project principles](docs/principles.md).
+# GOV.UK Platform prototypes
 
 ## Requirements
 
