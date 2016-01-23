@@ -15,6 +15,9 @@ a[href="#"]:visited{
   color: $link-colour;
 }
 
+.platform-description{
+  margin-bottom: 0
+}
 
 .section-heading{
   @include bold-24;
