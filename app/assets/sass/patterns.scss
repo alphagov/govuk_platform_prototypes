@@ -53,7 +53,7 @@ a[href="#"]:visited{
     width: 100%;
   }
   .featured-item-description h3{
-    margin-top: 0
+    margin-top: 15px
   }
 }
 
@@ -62,4 +62,8 @@ hr{
     border-width: 5px 0 0;
     height: 0;
     margin-top: 60px;
+}
+
+.browse-link{
+  float: right;
 }
