@@ -7,7 +7,29 @@
 {% block content %}
 
 <div class="full-width-container">
-  <h1>Platform</h1>
+
+  <div class="grid-row">
+
+    <div class="column-half">
+        <h1>Platform</h1>
+    </div>
+
+    <div class="column-half">
+
+        <form id="header-search" class="site-search" action="/search" method="get" role="search">
+    <div class="header-search-content">
+      <label for="search-main">Search GOV.UK Platform</label>
+      <input type="search" name="q" id="search-main" title="Search" class="js-search-focus"><input class="submit" type="submit" value="Search">
+    </div>
+  </form>
+
+    </div>
+
+  </div>
+
+
+
+
 </div>
 
 <main id="content" role="main">

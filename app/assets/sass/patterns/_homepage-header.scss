@@ -1,0 +1,71 @@
+
+// Hide standard blue strip
+#global-header-bar{
+  display: none;
+}
+
+// Full width blue header bar
+.full-width-container {
+   @extend %outdent-to-full-width;
+   background: $govuk-blue;
+   padding: 45px 0;
+   margin-bottom: 45px;
+   .grid-row{
+    max-width: 990px;
+    margin: auto;
+   }
+   h1{
+    color: $white;
+    @include bold-36;
+   }
+}
+
+// Search box in blue header bar
+#header-search{
+	@extend %contain-floats;
+    position: relative;
+
+	#search-main{
+		float: left;
+		box-sizing: border-box;
+		width: 86%;
+    	width: -webkit-calc(100% - 40px);
+    	width: calc(100% - 40px);
+    	height: 40px;
+    	padding: 6px;
+    	border: 0;
+	}
+
+	label{
+	float: none;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    z-index: 1;
+    width: 100%;
+    margin-right: 0;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 15px;
+    overflow: hidden;
+    display: block;
+    color: #6f777b;
+	}
+
+	input.submit{
+	float: left;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #0b0c0c;
+    border-width: 0 0 0 1px;
+    border-left-color: #222;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    overflow: hidden;
+    text-indent: -5000px;
+    cursor: pointer;
+    color: #fff;
+    background: #0b0c0c url(/public/images/search-button.png) no-repeat 2px 50%;
+	}
+}

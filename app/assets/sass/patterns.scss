@@ -8,26 +8,8 @@
 
 // Patterns
 @import 'patterns/check-your-answers';
+@import 'patterns/homepage-header';
 
-
-#global-header-bar{
-  display: none;
-}
-
-.full-width-container {
-   @extend %outdent-to-full-width;
-   background: $govuk-blue;
-   padding: 45px 15px;
-   margin-bottom: 45px;
-   h1{
-    max-width: 960px;
-    margin: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    color: $white;
-    @include bold-36;
-   }
-}
 
 a[href="#"]:visited{
   color: $link-colour;
