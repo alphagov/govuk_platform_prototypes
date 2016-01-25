@@ -15,7 +15,10 @@ a[href="#"]:visited{
   color: $link-colour;
 }
 
-.platform-description{
+.section-title{
+  margin-top: 0
+}
+.section-description{
   margin-bottom: 0
 }
 
@@ -49,6 +52,53 @@ hr{
     margin-top: 60px;
 }
 
-.browse-link{
-  float: right;
+.stat-bar{
+  margin-top: $gutter;
+}
+
+.stat{
+  display: block;
+  @include bold-36;
+  //margin-top: 57px;
+}
+
+.column-quarter,
+.column-one-quarter {
+  @include grid-column(1/6);
+}
+
+.browse-items{
+  //padding-top: $gutter;
+
+  .browse-item{
+    margin-top: $gutter;
+    //padding-top: $gutter;
+    //border-top: 1px solid $border-colour;
+    h3{
+      @include bold-19();
+      margin-top: 0;
+      margin-bottom: 10px;
+      a{
+        text-decoration: none;
+      }
+    }
+    .language{
+      color: $secondary-text-colour;
+      @include core-14;
+      margin-top: 2px;
+      float: right;
+    }
+    p{
+      @include core-16; 
+    }
+    .publisher{
+      color: $secondary-text-colour;
+      a{
+        color: $secondary-text-colour;
+        &:hover{
+          color: $text-colour
+        }
+      }
+    }
+  }
 }

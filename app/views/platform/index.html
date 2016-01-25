@@ -7,7 +7,26 @@
 {% block content %}
 
 <div class="full-width-container">
-  <h1>Platform</h1>
+
+  <div class="grid-row">
+
+    <div class="column-third">
+        <h1>Platform</h1>
+    </div>
+
+    <div class="column-two-thirds">
+
+      <form id="header-search" class="site-search" action="/search" method="get" role="search">
+        <div class="header-search-content">
+          <label for="search-main">Search GOV.UK Platform</label>
+          <input type="search" name="q" id="search-main" title="Search" class="js-search-focus"><input class="submit" type="submit" value="Search">
+        </div>
+      </form>
+
+    </div>
+
+  </div>
+
 </div>
 
 <main id="content" role="main">
@@ -15,31 +34,42 @@
   <div class="grid-row">
     <div class="column-two-thirds">
 
-    <p class="lede">
-      GOV.UK Platform lets you build public services quickly and efficiently
-      using modular components and data.
-    </p> 
-
+      <p class="lede section-description">
+        GOV.UK Platform helps you build public services <br>quickly and efficiently.
+        <a href="#" class="bold-medium">Find out more <span class="visually-hidden">about GOV.UK Platform</span></a>
+      </p> 
 
     </div>
   </div>
 
-  <h2 class="section-heading">
-    Resources
+  <hr>
+
+  <h2 class="heading-medium">
+    GOV.UK Platform consists of
   </h2>
 
   <div class="grid-row">
+
     <div class="column-one-third">
 
       <div class="browse-item">
         <h3 class="heading-medium">
-          <a href="#">Code</a>
+          <a href="#">Standards</a>
         </h3>
-        <!--
-        <p>Library of apps and components for building GOV.UK services</p>
-      -->
+        <p>Follow government standards to deliver a digital by default service</p>
+        <!--<p class="bold-xsmall">7 service assessments passed</p>-->
+      </div>
 
+    </div>
+
+    <div class="column-one-third">
+
+      <div class="browse-item">
+        <h3 class="heading-medium">
+          <a href="/platform/code">Code</a>
+        </h3>
         <p>Build your service using open source apps and components</p>
+        <!--<p class="bold-xsmall">213 apps</p>-->
       </div>
 
     </div>
@@ -50,8 +80,8 @@
         <h3 class="heading-medium">
           <a href="#">Data</a>
         </h3>
-
         <p>Power your service with government data sets and registers</p>
+        <!--<p class="bold-xsmall">136 registers</p>-->
       </div>
 
     </div>
@@ -63,142 +93,151 @@
           <a href="#">Patterns</a>
         </h3>
 
-        <!--
-        <p>Style guides, templates and patterns for content and design</p>
-      -->
-
         <p>Design your service using style guides, templates and patterns</p>
+        <!--<p class="bold-xsmall">74 patterns</p>-->
 
+      </div>
+
+    </div>
+
+
+    <div class="column-one-third">
+
+      <div class="browse-item">
+        <h3 class="heading-medium">
+          <a href="#">Products</a>
+        </h3>
+        <p>Handle identity, payments, notifications, web chat and more</p>
+        <!--<p class="bold-xsmall">8 products</p>-->
+      </div>
+
+    </div>
+
+
+    <div class="column-one-third">
+
+      <div class="browse-item">
+        <h3 class="heading-medium">
+          <a href="#">People</a>
+        </h3>
+        <p>Hire people, train people and connect with other service teams</p>
+        <!--<p class="bold-xsmall">35 people hired in last 7 days</p>-->
       </div>
 
     </div>
 
   </div>
 
+  <hr>
 
-  <h2 class="section-heading">
-    Services
+  <h2 class="heading-medium">
+    Featured product
   </h2>
 
-  <div class="grid-row">
-    <div class="column-one-third">
+  <div class="grid-row featured-item">
 
-      <div class="browse-item">
-        <h3 class="heading-medium">
-          <a href="#">GOV.UK Verify</a>
-        </h3>
+    <div class="column-one-half featured-item-image">
 
-        <p>Verify your user's identity</p>
-      </div>
+      <img src="/public/images/Verify_Pic.jpg" class="featured-image" />
 
     </div>
 
-    <div class="column-one-third">
+    <div class="column-one-half featured-item-description">
 
-      <div class="browse-item">
-        <h3 class="heading-medium">
-          <a href="#">GOV.UK Pay</a>
-        </h3>
+      <h3 class="heading-medium">
+        GOV.UK Verify
+      </h3>
 
-        <p>Collect payments from users</p>
-      </div>
+      <p>GOV.UK Verify is the new way to prove who you are online, so people can use government services like viewing their driving licence or filing their tax.</p>
 
-    </div>
+      <ul class="list">
+        <li><strong class="bold-small">35</strong> services using this product</li>
+        <li><strong class="bold-small">78,349</strong> identities verified in the last 7 days</li>
+      </ul>
 
-    <div class="column-one-third">
-
-      <div class="browse-item">
-        <h3 class="heading-medium">
-          <a href="#">GOV.UK Notify</a>
-        </h3>
-
-        <p>Send emails, SMS and letters</p>
-      </div>
+      <ul class="list">
+        <li class="bold-small"><a href="#">Find out more about GOV.UK Verify</a></li>
+        <li><a href="#">Browse all products</a></li>
+      </ul>
 
     </div>
 
   </div>
 
-  <div class="grid-row">
-    <div class="column-one-third">
+  <hr>
 
-      <div class="browse-item">
-        <h3 class="heading-medium">
-          <a href="#">GOV.UK Hosting</a>
-        </h3>
-
-        <p>Cloud hosting for government</p>
-      </div>
-
-    </div>
-
-    <div class="column-one-third">
-
-      <div class="browse-item">
-        <h3 class="heading-medium">
-          <a href="#">GOV.UK Chat</a>
-        </h3>
-
-        <p>Real time chat for users and agents</p>
-      </div>
-
-    </div>
-
-    <div class="column-one-third">
-
-
-
-    </div>
-
-  </div>
-
-  <h2 class="section-heading">
-    People and teams
+  <h2 class="heading-medium">
+    Featured pattern
   </h2>
 
-  <div class="grid-row">
-    <div class="column-one-third">
+  <div class="grid-row featured-item">
 
-      <div class="browse-item">
-        <h3 class="heading-medium">
-          <a href="#">Service manual</a>
-        </h3>
+    <div class="column-one-half featured-item-image">
 
-        <p>Learn how to deliver services that meet government standards</p>
-
-      </div>
+      <img src="/public/images/placeholder.png" class="featured-image" />
 
     </div>
 
-    <div class="column-one-third">
+    <div class="column-one-half featured-item-description">
 
-      <div class="browse-item">
-        <h3 class="heading-medium">
-          <a href="#">Digital marketplace</a>
-        </h3>
+      <h3 class="heading-medium">
+        Grant a licence
+      </h3>
 
-        <p>Find and buy the people and technology you need</p>
-      </div>
+      <p>Use the licence pattern where you want to be able to grant users permission to do something or own something.</p>
 
-    </div>
+      <ul class="list">
+        <li><strong class="bold-small">16</strong> services using this pattern</li>
+        <li><strong class="bold-small">452</strong> licences granted in the last 7 days</li>
+      </ul>
 
-    <div class="column-one-third">
 
-      <div class="browse-item">
-        <h3 class="heading-medium">
-          <a href="#">Communities</a>
-        </h3>
-
-        <p>Connect with other service teams around government</p>
-      </div>
+      <ul class="list">
+        <li class="bold-small"><a href="#">Find out more about the Licence pattern</a></li>
+        <li><a href="#">Browse all patterns</a></li>
+      </ul>
 
     </div>
 
   </div>
 
+    <hr>
 
+  <h2 class="heading-medium">
+    Featured code
+  </h2>
 
+  <div class="grid-row featured-item">
 
+    <div class="column-one-half featured-item-image">
+
+      <img src="/public/images/Prototype_Pic.png" class="featured-image" />
+
+    </div>
+
+    <div class="column-one-half featured-item-description">
+
+      <h3 class="heading-medium">
+        GOV.UK Prototype kit
+      </h3>
+
+      <p>Node - Express app for rapid HTML prototyping. Contains examples of all the common GOV.UK page templates, styles and patterns.</p>
+
+      <ul class="list">
+        <li><strong class="bold-small">45</strong> downloads in the last 7 days</li>
+        <li>Updated 2 days ago</li>
+      </ul>
+
+      <ul class="list">
+        <li class="bold-small"><a href="#">Find out more about the kit</a></li>
+        <li><a href="#">Browse all code</a></li>
+      </ul>
+
+    </div>
+
+  </div>
+
+  <p><br><br><br>[ And so on... ]</p>
 
 </main>
 
