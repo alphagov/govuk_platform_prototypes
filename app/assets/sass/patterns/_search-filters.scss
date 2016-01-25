@@ -1,0 +1,57 @@
+// SEARCH FILTERS
+
+.search-filter{
+
+  border: 5px solid $border-colour;
+    box-sizing: border-box;
+  margin-bottom: $gutter;
+
+  legend{
+    width: 100%;
+    outline: 5px solid $border-colour;
+    background: $border-colour;
+    padding: 5px 8px 3px 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    @include bold-19;
+  }
+
+  label{
+    margin: 5px;
+    @include core-16;
+  }
+
+  input{  
+    vertical-align: top;
+  }
+
+  .show-all{
+    @include core-16;
+    color: $secondary-text-colour;
+    text-decoration: underline;
+    margin: 0 0 10px 10px;
+  }
+
+}
+
+.tag-list{
+  .tag{
+    @include core-16;
+    display: inline-block;
+    background: $border-colour;
+    padding: 5px 8px 3px 8px;
+    font-weight: bold;
+    .remove{
+      display: inline-block;
+      background: $grey-1;
+      color: $white;
+      font-weight: bold;
+      width: 16px;
+      height: 16px;
+      border-radius: 8px;
+      margin-left: 10px;
+      line-height: 1.2;
+      text-indent: 3px;
+    }
+  }
+}

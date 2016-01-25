@@ -5,10 +5,12 @@
 @import "typography";
 @import "css3";
 @import "url-helpers";
+@import "grid_layout";
 
 // Patterns
 @import 'patterns/check-your-answers';
 @import 'patterns/homepage-header';
+@import 'patterns/search-filters';
 
 
 a[href="#"]:visited{
@@ -67,13 +69,12 @@ hr{
   @include grid-column(1/6);
 }
 
-.browse-items{
-  //padding-top: $gutter;
+.browse-items,
+.search-items{
 
-  .browse-item{
+  .browse-item,
+  .search-item{
     margin-top: $gutter;
-    //padding-top: $gutter;
-    //border-top: 1px solid $border-colour;
     h3{
       @include bold-19();
       margin-top: 0;
@@ -90,9 +91,11 @@ hr{
     }
     p{
       @include core-16; 
+      margin: 0;
     }
     .publisher{
       color: $secondary-text-colour;
+      //@include core-14;
       a{
         color: $secondary-text-colour;
         &:hover{
@@ -100,5 +103,11 @@ hr{
         }
       }
     }
+  }
+}
+
+.search-items .search-item{
+  h3{
+    @include bold-24;
   }
 }

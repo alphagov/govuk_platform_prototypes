@@ -17,6 +17,13 @@
    h1{
     color: $white;
     @include bold-36;
+    a{
+      text-decoration: none;
+      color: $white;
+      &:hover{
+      text-decoration: underline;
+      }
+    }
    }
 }
 
