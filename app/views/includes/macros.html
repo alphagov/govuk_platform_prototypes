@@ -1,0 +1,99 @@
+{# Macros #}
+
+
+
+{# Code search results list #}
+
+{% macro codeSearch(i) %}
+
+  {% for item in i.items %}
+
+	<div class="search-item">
+	  <span class="language">{{ item.language }}</span>
+	  <h3>
+	    <a href="#">{{ item.name }}</a>
+	  </h3>
+	      
+	  <p>{{ item.description }}</p>
+
+	  <ul class="list font-xsmall publisher">
+	    <li>v{{ item.version }} published {{ item.updated }} ago by <a href="#">{{ item.developer }}</a></li>
+	  </ul>
+	</div>
+
+  {% endfor %}
+
+{% endmacro %}
+
+
+{# Code browse results list #}
+
+{% macro codeBrowse(i) %}
+
+  {% for item in i.items %}
+
+	<div class="browse-item column-third">
+	  <span class="language">{{ item.language }}</span>
+	  <h3>
+	    <a href="#">{{ item.name }}</a>
+	  </h3>
+	      
+	  <p>{{ item.description }}</p>
+
+	  <ul class="list font-xsmall publisher">
+	    <li>v{{ item.version }} published {{ item.updated }} ago by <a href="#">{{ item.developer }}</a></li>
+	  </ul>
+	</div>
+
+  {% endfor %}
+
+{% endmacro %}
+
+
+{# Data search results list #}
+
+{% macro dataSearch(i) %}
+
+  {% for item in i.items %}
+
+	<div class="search-item">
+	  <span class="type">{{ item.language }}</span>
+	  <h3>
+	    <a href="{{ item.url }}">{{ item.name }}</a>
+	  </h3>
+	      
+	  <p>{{ item.description }}</p>
+
+	  <ul class="list font-xsmall publisher">
+	    <li>Last updated on {{ item.updated }} by <br><a href="#">{{ item.registrar }}</a></li>
+	  	<li>{{ item.records }} records</li>
+	  </ul>
+	</div>
+
+  {% endfor %}
+
+{% endmacro %}
+
+
+{# Data browse list #}
+
+{% macro dataBrowse(i) %}
+
+  {% for item in i.items %}
+
+	<div class="browse-item column-third">
+	  <span class="type">{{ item.language }}</span>
+	  <h3>
+	    <a href="{{ item.url }}">{{ item.name }}</a>
+	  </h3>
+	      
+	  <p>{{ item.description }}</p>
+
+	  <ul class="list font-xsmall publisher">
+	    <li>Last updated on {{ item.updated }} by <br><a href="#">{{ item.registrar }}</a></li>
+	  </ul>
+	</div>
+
+  {% endfor %}
+
+{% endmacro %}

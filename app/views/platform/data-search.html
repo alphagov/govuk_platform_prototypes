@@ -13,14 +13,14 @@
   <div class="grid-row">
 
     <div class="column-third">
-        <h1><a href="/platform/code">Code</a></h1>
+        <h1><a href="/platform/data">Data</a></h1>
     </div>
 
     <div class="column-two-thirds">
 
       <form id="header-search" class="site-search" action="/search" method="get" role="search">
         <div class="header-search-content">
-          <label for="search-main">Search for code</label>
+          <label for="search-main">Search for data</label>
           <input type="search" name="q" id="search-main" title="Search" class="js-search-focus"><input class="submit" type="submit" value="Search">
         </div>
       </form>
@@ -40,49 +40,37 @@
       <br>
 
       <fieldset class="search-filter">
-        <legend>Language</legend>
+        <legend>Type</legend>
 
         <label class="form-label">
           <input type="checkbox" />
-          HTML
+          Register
         </label>
         <label class="form-label">
           <input type="checkbox" />
-          Ruby
+          Data set
         </label>
-        <label class="form-label">
-          <input type="checkbox" />
-          Node
-        </label>
-        <label class="form-label">
-          <input type="checkbox" />
-          PHP
-        </label>
-
-        <div class="show-all">
-          Show all
-        </div>
 
       </fieldset>
 
       <fieldset class="search-filter">
-        <legend>Developer</legend>
+        <legend>Registrar</legend>
 
         <label class="form-label">
           <input type="checkbox" />
-          GDS
-        </label>
-        <label class="form-label">
-          <input type="checkbox" />
-          MoJ
-        </label>
-        <label class="form-label">
-          <input type="checkbox" />
-          DWP
-        </label>
-        <label class="form-label">
-          <input type="checkbox" />
           Home Office
+        </label>
+        <label class="form-label">
+          <input type="checkbox" />
+          Ministry of Justice
+        </label>
+        <label class="form-label">
+          <input type="checkbox" />
+          Food Standards Agency
+        </label>
+        <label class="form-label">
+          <input type="checkbox" />
+          Office for National Statistics
         </label>
 
         <div class="show-all">
@@ -96,7 +84,7 @@
 
         <label class="form-label">
           <input type="checkbox" />
-          API
+          Education
         </label>
         <label class="form-label">
           <input type="checkbox" />
@@ -104,15 +92,15 @@
         </label>
         <label class="form-label">
           <input type="checkbox" />
-          Email
+          Food
         </label>
         <label class="form-label">
           <input type="checkbox" />
-          Front-end
+          Business
         </label>
         <label class="form-label">
           <input type="checkbox" />
-          Security
+          Health
         </label>
 
         <div class="show-all">
@@ -126,10 +114,10 @@
     <div class="column-two-thirds">
       <p class="font-xsmall">237 results found</p>
 
-      {% include "includes/code-search.html" %}
-      {% include "includes/code-search.html" %}
-      {% include "includes/code-search.html" %}
-      {% include "includes/code-search.html" %}
+      {% include "includes/data-search.html" %}
+      {% include "includes/data-search.html" %}
+      {% include "includes/data-search.html" %}
+      {% include "includes/data-search.html" %}
 
     </div>
   </div>
