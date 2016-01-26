@@ -97,3 +97,49 @@
   {% endfor %}
 
 {% endmacro %}
+
+
+
+{# Product browse list #}
+
+{% macro productBrowse(i) %}
+
+  {% for item in i.items %}
+
+	<div class="browse-item column-third">
+	  <h3>
+	    <a href="{{ item.url }}">{{ item.name }}</a>
+	  </h3>
+	      
+	  <p>{{ item.description }}</p>
+
+	  <ul class="list font-xsmall publisher">
+	    <li><a href="#">{{ item.developer }}</a></li>
+	  </ul>
+	</div>
+
+  {% endfor %}
+
+{% endmacro %}
+
+
+
+{# Patterns browse list #}
+
+{% macro patternBrowse(i) %}
+
+  {% for item in i.items %}
+
+	<div class="browse-item column-third">
+	  <h3>
+	    <a href="#">{{ item.name }}</a>
+	  </h3>
+	<!--      
+	  <p>{{ item.description }}</p>
+	-->
+
+	</div>
+
+  {% endfor %}
+
+{% endmacro %}
