@@ -126,14 +126,17 @@ hr{
 .code-tabs{
   @extend %contain-floats;
   border-right: 1px solid $border-colour;
+  border-left: 1px solid $border-colour;
   .tabs {
     li{
+    font-size: 16px;
     float: left;
     padding: 15px 30px;
     color: $link-colour;
     text-decoration: underline;
       &.selected{
         background: #272822;
+        outline: 1px solid #272822;
         color: white;
         text-decoration: none;
       }
