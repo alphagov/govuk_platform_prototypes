@@ -48,31 +48,24 @@
   {% include "includes/patterns/date-of-birth.html" %}
   </div>
 
-  <div class="code-tabs">
-    <ul class="tabs">
-      <li class="selected"><a href="#example-1-html">HTML</a></li>
-      <li><a href="#example-1-nunjucks">Nunjucks</a></li>
-      <li><a href="#example-1-sass">Sass</a></li>
-    </ul>
-  </div>
-  <div class="code-example" id="example-1-html">
-    <pre>
-      <code class="language-markup">
+ <div class="tabs tabs-code">
+    <h3>HTML</h3>
+    <div>
+      <pre>
+        <code class="language-markup">
 {% include "includes/patterns/date-of-birth.html" %}
-      </code>
-    </pre>
-  </div>
-  <div class="code-example js-hidden" id="example-1-nunjucks">
-    <pre>
-      <code class="language-markup">
-      </code>
-    </pre>
-  </div>
-  <div class="code-example js-hidden" id="example-1-sass">
-    <pre>
-      <code class="language-markup">
-      </code>
-    </pre>
+        </code>
+      </pre>
+    </div>
+    <h3>Sass</h3>
+    <div>
+      <pre>
+        <code class="language-markup">
+// Import the following file into your Sass
+@import "elements/forms/form-date"; 
+        </code>
+      </pre>
+    </div>
   </div>
 
 
@@ -90,4 +83,12 @@
 
 {% endblock %}
 
-
+{% block body_end %}
+{{ super() }}
+<script src="/public/javascripts/jquery.accTabs.js"></script>
+<script>
+  $(function() {
+    $('.tabs-code').accTabs();
+  });
+</script>
+{% endblock %}
