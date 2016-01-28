@@ -63,7 +63,6 @@ hr{
 .stat{
   display: block;
   @include bold-36;
-  //margin-top: 57px;
 }
 
 .column-quarter,
@@ -76,7 +75,7 @@ hr{
 
   .browse-item,
   .search-item{
-    margin-top: $gutter;
+    margin-top: $gutter-half;
     h3{
       @include bold-19();
       margin-top: 0;
