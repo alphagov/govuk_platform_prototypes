@@ -36,93 +36,54 @@
 
 <main id="content" role="main">
 
-  <div class="grid-rowx">
-    <div class="column-two-thirdsx">
+  <h1 class="heading-large">
+    Date of birth
+  </h1>
 
-      <h1 class="heading-large">
-        Date of birth
-      </h1>
-
-      <div class="text">
-        <p>For capturing memorable dates like dates of birth, the simplest option is to provide text fields for users to type the date in.</p>
-      </div>
-
-      <div class="example">
-
-        <fieldset class="form-group">
-          <legend class="heading-medium">What is your date of birth?</legend>
-          <div class="form-date">
-
-            <p>For example, 31 3 1980</p>
-
-            <div class="form-group form-group-day">
-              <label for="dob-day">Day</label>
-              <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
-            </div>
-
-            <div class="form-group form-group-month">
-              <label for="dob-month">Month</label>
-              <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
-            </div>
-
-            <div class="form-group form-group-year">
-              <label for="dob-year">Year</label>
-              <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2014">
-            </div>
-
-          </div>
-        </fieldset>
-
-      </div>
-
-      <div class="code-tabs">
-        <ul class="tabs">
-          <li class="selected">HTML</li>
-          <li>Nunjucks</li>
-          <li>Sass</li>
-        </ul>
-      </div>
-
-      <div class="code-examples">
-<pre>
-<code class="language-markup">
-<fieldset class="form-group">
-  <legend class="heading-medium">What is your date of birth?</legend>
-  <div class="form-date">
-
-    <p>For example, 31 3 1980</p>
-
-    <div class="form-group form-group-day">
-      <label for="dob-day">Day</label>
-      <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
-    </div>
-
-    <div class="form-group form-group-month">
-      <label for="dob-month">Month</label>
-      <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
-    </div>
-
-    <div class="form-group form-group-year">
-      <label for="dob-year">Year</label>
-      <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2014">
-    </div>
-
+  <div class="text">
+    <p>For capturing memorable dates like dates of birth, the simplest option is to provide text fields for users to type the date in.</p>
   </div>
-</fieldset>
-</code>
-</pre>
 
-    </div>
+  <div class="example">
+  {% include "includes/patterns/date-of-birth.html" %}
+  </div>
 
-    <div class="text">
-      <p>Calendar controls are not particularly useful for known dates and some users struggle with select boxes. We're currently recommending using three fields as it's easier to reliably validate than a single field.</p>
+  <div class="code-tabs">
+    <ul class="tabs">
+      <li class="selected"><a href="#example-1-html">HTML</a></li>
+      <li><a href="#example-1-nunjucks">Nunjucks</a></li>
+      <li><a href="#example-1-sass">Sass</a></li>
+    </ul>
+  </div>
+  <div class="code-example" id="example-1-html">
+    <pre>
+      <code class="language-markup">
+{% include "includes/patterns/date-of-birth.html" %}
+      </code>
+    </pre>
+  </div>
+  <div class="code-example js-hidden" id="example-1-nunjucks">
+    <pre>
+      <code class="language-markup">
+      </code>
+    </pre>
+  </div>
+  <div class="code-example js-hidden" id="example-1-sass">
+    <pre>
+      <code class="language-markup">
+      </code>
+    </pre>
+  </div>
 
-      <p>Don't automatically tab between fields, as this can be unexpected behaviour that clashes with normal keyboard controls, and confuses users.</p>
 
-      <p>Tip: If you want to trigger the num-pad on iPhones, add a pattern attribute to the input element like this: pattern="[0-9]*"</p>
-    </div>
+  <br><br>
 
-    </div>
+  <div class="text">
+    <p>Calendar controls are not particularly useful for known dates and some users struggle with select boxes. We're currently recommending using three fields as it's easier to reliably validate than a single field.</p>
+
+    <p>Don't automatically tab between fields, as this can be unexpected behaviour that clashes with normal keyboard controls, and confuses users.</p>
+
+    <p>Tip: If you want to trigger the num-pad on iPhones, add a pattern attribute to the input element like this: pattern="[0-9]*"</p>
   </div>
 
 </main>

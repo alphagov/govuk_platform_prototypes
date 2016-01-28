@@ -11,6 +11,8 @@
 @import 'patterns/check-your-answers';
 @import 'patterns/homepage-header';
 @import 'patterns/search-filters';
+@import 'patterns/code-examples';
+@import 'patterns/tabs';
 
 
 a[href="#"]:visited{
@@ -109,37 +111,5 @@ hr{
 .search-items .search-item{
   h3{
     @include bold-24;
-  }
-}
-
-.example{
-  @extend %contain-floats;
-  border: 1px solid $border-colour;
-  padding: $gutter $gutter 0;
-  margin-top: 45px;
-}
-
-.code-examples{
-  margin-bottom: 45px;
-}
-
-.code-tabs{
-  @extend %contain-floats;
-  border-right: 1px solid $border-colour;
-  border-left: 1px solid $border-colour;
-  .tabs {
-    li{
-    font-size: 16px;
-    float: left;
-    padding: 15px 30px;
-    color: $link-colour;
-    text-decoration: underline;
-      &.selected{
-        background: #272822;
-        outline: 1px solid #272822;
-        color: white;
-        text-decoration: none;
-      }
-    }
   }
 }
