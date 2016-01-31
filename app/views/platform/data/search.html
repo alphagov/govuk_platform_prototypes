@@ -36,79 +36,22 @@
   <div class="search-items grid-row">
     <div class="column-one-third">
 
-      <p class="font-xsmall">Filter by:</p>
-      <br>
-
-      <fieldset class="search-filter">
-        <legend>Type</legend>
-
-        <label class="form-label">
-          <input type="checkbox" />
-          Register
-        </label>
-        <label class="form-label">
-          <input type="checkbox" />
-          Data set
-        </label>
-
-      </fieldset>
-
-      <fieldset class="search-filter">
-        <legend>Registrar</legend>
-
-        <label class="form-label">
-          <input type="checkbox" />
-          Home Office
-        </label>
-        <label class="form-label">
-          <input type="checkbox" />
-          Ministry of Justice
-        </label>
-        <label class="form-label">
-          <input type="checkbox" />
-          Food Standards Agency
-        </label>
-        <label class="form-label">
-          <input type="checkbox" />
-          Office for National Statistics
-        </label>
-
-        <div class="show-all">
-          Show all
-        </div>
-
-      </fieldset>
-
-      <fieldset class="search-filter">
-        <legend>Tag</legend>
-
-        <label class="form-label">
-          <input type="checkbox" />
-          Education
-        </label>
-        <label class="form-label">
-          <input type="checkbox" />
-          Mapping
-        </label>
-        <label class="form-label">
-          <input type="checkbox" />
-          Food
-        </label>
-        <label class="form-label">
-          <input type="checkbox" />
-          Business
-        </label>
-        <label class="form-label">
-          <input type="checkbox" />
-          Health
-        </label>
-
-        <div class="show-all">
-          Show all
-        </div>
-
-      </fieldset>
-
+      {{ macro.filterPanels({
+        filters: [
+          {
+            name:        "Type",
+            options:     ["Register", "Data set"]
+          },
+          {
+            name:        "Registrar",
+            options:     ["Home Office", "Ministry of Justice", "Food Standards Agency", "Office for National Statistics"]
+          },
+          {
+            name:        "Tag",
+            options:     ["Education", "Mapping", "Food", "Business", "Health"]
+          }
+        ]
+      })}}
 
     </div>
     <div class="column-two-thirds">

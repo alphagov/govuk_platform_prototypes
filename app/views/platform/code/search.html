@@ -36,91 +36,22 @@
   <div class="search-items grid-row">
     <div class="column-one-third">
 
-      <p class="font-xsmall">Filter by:</p>
-      <br>
-
-      <fieldset class="search-filter">
-        <legend>Language</legend>
-
-        <label class="form-label">
-          <input type="checkbox" />
-          HTML
-        </label>
-        <label class="form-label">
-          <input type="checkbox" />
-          Ruby
-        </label>
-        <label class="form-label">
-          <input type="checkbox" />
-          Node
-        </label>
-        <label class="form-label">
-          <input type="checkbox" />
-          PHP
-        </label>
-
-        <div class="show-all">
-          Show all
-        </div>
-
-      </fieldset>
-
-      <fieldset class="search-filter">
-        <legend>Developer</legend>
-
-        <label class="form-label">
-          <input type="checkbox" />
-          GDS
-        </label>
-        <label class="form-label">
-          <input type="checkbox" />
-          MoJ
-        </label>
-        <label class="form-label">
-          <input type="checkbox" />
-          DWP
-        </label>
-        <label class="form-label">
-          <input type="checkbox" />
-          Home Office
-        </label>
-
-        <div class="show-all">
-          Show all
-        </div>
-
-      </fieldset>
-
-      <fieldset class="search-filter">
-        <legend>Tag</legend>
-
-        <label class="form-label">
-          <input type="checkbox" />
-          API
-        </label>
-        <label class="form-label">
-          <input type="checkbox" />
-          Mapping
-        </label>
-        <label class="form-label">
-          <input type="checkbox" />
-          Email
-        </label>
-        <label class="form-label">
-          <input type="checkbox" />
-          Front-end
-        </label>
-        <label class="form-label">
-          <input type="checkbox" />
-          Security
-        </label>
-
-        <div class="show-all">
-          Show all
-        </div>
-
-      </fieldset>
-
+      {{ macro.filterPanels({
+        filters: [
+          {
+            name:        "Language",
+            options:     ["HTML", "Ruby", "Node", "PHP"]
+          },
+          {
+            name:        "Developer",
+            options:     ["GDS", "MoJ", "DWP", "Home Office"]
+          },
+          {
+            name:        "Tag",
+            options:     ["API", "Mapping", "Email", "Front-end", "Security"]
+          }
+        ]
+      })}}
 
     </div>
     <div class="column-two-thirds">

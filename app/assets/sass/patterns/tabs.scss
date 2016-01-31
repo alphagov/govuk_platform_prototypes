@@ -224,3 +224,55 @@
   }
 
 }
+
+// MULTI PAGE TABS
+
+/*
+.tabs-multi-page{
+  @extend %contain-floats;
+  margin: $gutter 0;
+  border-bottom: 1px solid $border-colour;
+  .tab{
+    float: left;
+    padding: 10px 30px;
+    margin: 0;
+    font-size: 16px;
+    z-index: 999;
+    background: $white;
+    margin-bottom: -1px;
+    &.current{
+      border: 1px solid $border-colour;  
+      border-bottom: 1px solid $white;   
+    }
+  }
+}
+*/
+
+.tabs-multi-page{
+  @extend %contain-floats;
+  margin: 45px 0 60px 15px;
+  .tab{
+    float: left;
+    a{
+      color: $white;
+      text-decoration: none;
+    }
+    padding: 10px 30px;
+    margin: 0;
+    font-size: 16px;
+    z-index: 999;
+    margin-bottom: -1px;
+    font-weight: bold;
+    &.current{
+      background: $white;
+      color: $text-colour;  
+      font-weight: normal;
+    }
+  }
+}
+
+.pattern-page .full-width-container{
+  padding-bottom: 0;
+}
+
+

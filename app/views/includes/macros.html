@@ -134,12 +134,47 @@
 	  <h3>
 	    <a href="{{ item.url }}">{{ item.name }}</a>
 	  </h3>
-	<!--      
-	  <p>{{ item.description }}</p>
-	-->
-
 	</div>
 
   {% endfor %}
 
+{% endmacro %}
+
+
+{# Patterns browse list #}
+
+{% macro patternGetStarted(i) %}
+
+  {% for item in i.items %}
+
+	<div class="browse-item column-third">
+	  <h3>
+	    <a href="{{ item.url }}">{{ item.name }}</a>
+	  </h3>
+	  <p>{{ item.description }}</p>
+	</div>
+
+  {% endfor %}
+
+{% endmacro %}
+
+{# Browse filter panels #}
+
+{% macro filterPanels(i) %}
+	<p class="font-xsmall">Filter by:</p>
+  <br>
+  {% for filter in i.filters %}
+  <fieldset class="search-filter">
+    <legend>{{ filter.name }}</legend>
+			{% for option in filter.options %}
+			<label class="form-label">
+        <input type="checkbox" />
+        {{ option }}
+      </label>
+  		{% endfor %}
+    <div class="show-all">
+      Show all
+    </div>
+	</fieldset>
+  {% endfor %}
 {% endmacro %}
