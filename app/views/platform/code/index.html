@@ -13,14 +13,14 @@
   <div class="grid-row">
 
     <div class="column-third">
-        <h1>Patterns</h1>
+        <h1>Code</h1>
     </div>
 
     <div class="column-two-thirds">
 
       <form id="header-search" class="site-search" action="/platform/code-search" method="get" role="search">
         <div class="header-search-content">
-          <label for="search-main">Search for patterns</label>
+          <label for="search-main">Search for code</label>
           <input type="search" name="q" id="search-main" title="Search" class="js-search-focus"><input class="submit" type="submit" value="Search">
         </div>
       </form>
@@ -37,16 +37,16 @@
     <div class="column-half">
 
       <p class="lede section-description">
-        Design your service using style guides, templates and patterns
+        <a href="/platform/code/search" class="bold-medium">Browse open source code and apps</a><br> written by government, for government.
       </p> 
 
     </div>
 
     <div class="column-one-quarter">
-      <span class="stat">183</span> registers
+      <span class="stat">237</span> apps
     </div>
     <div class="column-one-quarter">
-      <span class="stat">12</span> orgs
+      <span class="stat">17</span> orgs
     </div>
     <div class="column-one-quarter">
       <span class="stat">3,498</span> downloads
@@ -56,31 +56,21 @@
   <hr>
 
   <h2 class="heading-medium">
-    Service
+    Most popular
   </h2>
 
   <div class="browse-items grid-row">
-    {% include "includes/pattern-service.html" %}
+    {% include "includes/code-browse-popular.html" %}
   </div>
 
   <hr>
 
   <h2 class="heading-medium">
-    Components
+    Recently updated
   </h2>
 
   <div class="browse-items grid-row">
-    {% include "includes/pattern-browse.html" %}
-  </div>
-
-  <hr>
-
-  <h2 class="heading-medium">
-    Page templates
-  </h2>
-
-  <div class="browse-items grid-row">
-    {% include "includes/pattern-page.html" %}
+    {% include "includes/code-browse-recent.html" %}
   </div>
 
   <hr>
@@ -92,7 +82,7 @@
 
   <div class="grid-row">
     <div class="column-third">
-      <a href="#">Connect your data</a>
+      <a href="#">Submit your code</a>
     </div>
     <div class="column-third">
       <a href="#">Tutorials and training</a>

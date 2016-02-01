@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK Platform
+{% endblock %}
+
+{% import "includes/macros.html" as macro %}
+
+{% block content %}
+
+<div class="full-width-container">
+
+  <div class="grid-row">
+
+    <div class="column-third">
+        <h1><a href="/platform/code">Code</a></h1>
+    </div>
+
+    <div class="column-two-thirds">
+
+      <form id="header-search" class="site-search" action="/platform/code/search" method="get" role="search">
+        <div class="header-search-content">
+          <label for="search-main">Search for code</label>
+          <input type="search" name="q" id="search-main" title="Search" class="js-search-focus"><input class="submit" type="submit" value="Search">
+        </div>
+      </form>
+
+    </div>
+
+  </div>
+
+</div>
+
+<main id="content" role="main">
+
+  <div class="search-items grid-row">
+    <div class="column-one-third">
+
+      {{ macro.filterPanels({
+        filters: [
+          {
+            name:        "Language",
+            options:     ["HTML", "Ruby", "Node", "PHP"]
+          },
+          {
+            name:        "Developer",
+            options:     ["GDS", "MoJ", "DWP", "Home Office"]
+          },
+          {
+            name:        "Tag",
+            options:     ["API", "Mapping", "Email", "Front-end", "Security"]
+          }
+        ]
+      })}}
+
+    </div>
+    <div class="column-two-thirds">
+      <p class="font-xsmall">237 results found</p>
+
+      {% include "includes/code-search.html" %}
+      {% include "includes/code-search.html" %}
+      {% include "includes/code-search.html" %}
+      {% include "includes/code-search.html" %}
+
+    </div>
+  </div>
+
+  
+
+
+
+</main>
+
+{% endblock %}
+
+

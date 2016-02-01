@@ -1,0 +1,58 @@
+{% extends "layout-pattern.html" %}
+
+{% block pattern_content %}
+
+<!--
+<div class="tabs-multi-page">
+  <h2 class="tab current">Guide</h2>
+  <p class="tab"><a href="">Discuss</a></p>
+</div>
+-->
+
+<h1 class="heading-large">
+  Dates
+</h1>
+
+<h2 class="heading-medium">
+  Example 1: Date of birth
+</h2>
+
+<div class="text">
+  <p>For capturing memorable dates like dates of birth, the simplest option is to provide text fields for users to type the date in.</p>
+</div>
+
+<div class="example">
+{% include "includes/patterns/date-of-birth.html" %}
+</div>
+
+<div class="tabs tabs-code">
+  <h3>HTML</h3>
+  <div>
+    <pre>
+      <code class="language-markup">
+{% include "includes/patterns/date-of-birth.html" %}
+      </code>
+    </pre>
+  </div>
+  <h3>Sass</h3>
+  <div>
+    <pre>
+      <code class="language-markup">
+// Import the following file into your Sass
+@import "elements/forms/form-date"; 
+      </code>
+    </pre>
+  </div>
+</div>
+
+
+
+<div class="text">
+  <p>Calendar controls are not particularly useful for known dates and some users struggle with select boxes. We recommend using three fields as it's easier to reliably validate than a single field.</p>
+
+  <p>Don't automatically tab between fields, as this can be unexpected behaviour that clashes with normal keyboard controls, and confuses users.</p>
+
+  <p>Tip: If you want to trigger the num-pad on iPhones, add a pattern attribute to the input element like this: pattern="[0-9]*"</p>
+</div>
+
+{% endblock %}

@@ -13,14 +13,14 @@
   <div class="grid-row">
 
     <div class="column-third">
-        <h1>Code</h1>
+        <h1>Patterns</h1>
     </div>
 
     <div class="column-two-thirds">
 
-      <form id="header-search" class="site-search" action="/platform/code-search" method="get" role="search">
+      <form id="header-search" class="site-search" action="/platform/patterns/search" method="get" role="search">
         <div class="header-search-content">
-          <label for="search-main">Search for code</label>
+          <label for="search-main">Search for patterns</label>
           <input type="search" name="q" id="search-main" title="Search" class="js-search-focus"><input class="submit" type="submit" value="Search">
         </div>
       </form>
@@ -37,40 +37,58 @@
     <div class="column-half">
 
       <p class="lede section-description">
-        <a href="/platform/code-search" class="bold-medium">Browse open source code and apps</a><br> written by government, for government.
+        Design your service using style guides, templates and patterns
       </p> 
 
     </div>
 
     <div class="column-one-quarter">
-      <span class="stat">237</span> apps
+      <span class="stat">87</span> patterns
     </div>
     <div class="column-one-quarter">
-      <span class="stat">17</span> orgs
-    </div>
-    <div class="column-one-quarter">
-      <span class="stat">3,498</span> downloads
+      <span class="stat">465</span> downloads
     </div>
   </div>
 
   <hr>
 
-  <h2 class="heading-medium">
-    Most popular
+
+  <h2>
+    Get started
   </h2>
 
   <div class="browse-items grid-row">
-    {% include "includes/code-browse-popular.html" %}
+    {% include "includes/pattern-get-started.html" %}
+  </div>
+  
+
+  <h2 class="heading-medium">
+    Service
+  </h2>
+
+  <div class="browse-items grid-row">
+    {% include "includes/pattern-service.html" %}
+  </div>
+
+
+  <hr>
+
+  <h2 class="heading-medium">
+    Components
+  </h2>
+
+  <div class="browse-items grid-row">
+    {% include "includes/pattern-browse.html" %}
   </div>
 
   <hr>
 
   <h2 class="heading-medium">
-    Recently updated
+    Page templates
   </h2>
 
   <div class="browse-items grid-row">
-    {% include "includes/code-browse-recent.html" %}
+    {% include "includes/pattern-page.html" %}
   </div>
 
   <hr>
@@ -82,7 +100,7 @@
 
   <div class="grid-row">
     <div class="column-third">
-      <a href="#">Submit your code</a>
+      <a href="#">Connect your data</a>
     </div>
     <div class="column-third">
       <a href="#">Tutorials and training</a>

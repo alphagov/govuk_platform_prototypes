@@ -11,6 +11,8 @@
 @import 'patterns/check-your-answers';
 @import 'patterns/homepage-header';
 @import 'patterns/search-filters';
+@import 'patterns/examples';
+@import 'patterns/tabs';
 
 
 a[href="#"]:visited{
@@ -61,7 +63,6 @@ hr{
 .stat{
   display: block;
   @include bold-36;
-  //margin-top: 57px;
 }
 
 .column-quarter,
@@ -74,7 +75,7 @@ hr{
 
   .browse-item,
   .search-item{
-    margin-top: $gutter;
+    margin-top: $gutter-half;
     h3{
       @include bold-19();
       margin-top: 0;
