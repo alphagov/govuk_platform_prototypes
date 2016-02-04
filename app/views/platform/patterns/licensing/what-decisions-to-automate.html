@@ -1,0 +1,182 @@
+{% extends "layout-pattern.html" %}
+
+{% block pattern_content %}
+
+<!--
+<div class="tabs-multi-page">
+  <h2 class="tab current">Guide</h2>
+  <p class="tab"><a href="">Discuss</a></p>
+</div>
+-->
+
+<h1 class="heading-large">
+  Automating decisions
+</h1>
+
+<div class="grid-row">
+  <div class="column-two-thirds">
+    <p class="lede">
+    Automating decisions to give permission, makes services faster for users and cheaper for government.</p>
+
+    <p class="lede">
+    Computers are better at some types of decisions, humans are better at others. </p>
+  </div>
+</div>
+
+<div class="grid-row">
+  <div class="column-two-thirds">
+
+    <h2 class="heading-medium">
+      Automatic decisions  
+    </h2>
+
+    <p>Automated decisions are yes-no questions answered by software using data.</p> 
+
+    <p>For example:</p>
+
+      <ul class="list list-bullet">
+        <li>Are you over 18?</li>
+        <li>Do you have a criminal record?</li>
+        <li>Do you have right to work in the UK?</li>
+        <li>Do you have a Limited Company?</li>
+        <li>Do you live in an area of Significant Scientific interest</li>
+      </ul>
+
+    <p>Software and data is often better at granting or refusing licence, when the only condition of a user getting or not getting permission is based just yes-no questions.</p>
+
+    
+  <details>
+
+    <summary><span class="summary">Examples of automatic licences</span></summary>
+
+    <div class="panel panel-border-narrow">
+
+      <p>
+        If you’re not sure about your nationality, try to find out from an official document like a passport or national ID card.
+      </p>
+
+      <p>
+        We need to know your nationality so we can work out which elections you’re entitled to vote in. If you can’t provide your nationality, you’ll have to send copies of identity documents through the post.
+      </p>
+
+    </div>
+
+  </details>
+
+  </div>
+</div>
+
+<div class="grid-row">
+  <div class="column-two-thirds">
+
+    <h2 class="heading-medium">
+      Human decisions  
+    </h2>
+
+    <p>Human decisions are expert judgements about a users suitability for a licence, informed by data, offline activites or rules which often change.</p>
+
+    <p>For example:</p>
+
+    <ul class="list list-bullet">
+      <li>Is this user able to drive safely?</li>
+      <li>Is this safe place to store firearms?</li>
+      <li>Does this rare health condition effect driving?</li>
+      <li>Is this user eligible for visa?</li>
+    </ul>
+
+  </div>
+</div>
+
+  <details>
+
+    <summary><span class="summary">Examples of humans granting licences</span></summary>
+
+    <div class="panel panel-border-narrow">
+
+      <p>
+        If you’re not sure about your nationality, try to find out from an official document like a passport or national ID card.
+      </p>
+
+      <p>
+        We need to know your nationality so we can work out which elections you’re entitled to vote in. If you can’t provide your nationality, you’ll have to send copies of identity documents through the post.
+      </p>
+
+    </div>
+
+  </details>
+
+<div class="grid-row">
+  <div class="column-two-thirds">
+
+    <h2 class="heading-medium">
+      Risk
+    </h2>
+
+    <p>What is the risk of automating or not automating a decision to grant a licence?</p>
+
+      <ul class="list list-bullet">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
+  </div>
+</div>
+
+<div class="grid-row">
+  <div class="column-two-thirds">
+
+    <h2 class="heading-medium">
+      How to automate a decision 
+    </h2>
+
+    <p>More permission giving will be automated, as data is made available through registers and APIs such as GOV.UK Verify.</p>
+
+      <p>Teams must</p>
+
+      <ul class="list list-bullet">
+        <li>Does automation make the service simpler, clearer, faster for users?</li>
+        <li>It is technically possible to automate part of a service?</li>
+        <li>What is the risk of automating or not automating a decision?</li>
+      </ul>
+
+  </div>
+</div>
+
+
+<!--
+<div class="example">
+{% include "includes/patterns/date-of-birth.html" %}
+</div>
+
+<div class="tabs tabs-code">
+  <h3>HTML</h3>
+  <div>
+    <pre>
+      <code class="language-markup">
+{% include "includes/patterns/date-of-birth.html" %}
+      </code>
+    </pre>
+  </div>
+  <h3>Sass</h3>
+  <div>
+    <pre>
+      <code class="language-markup">
+// Import the following file into your Sass
+@import "elements/forms/form-date"; 
+      </code>
+    </pre>
+  </div>
+</div>
+
+
+<div class="text">
+  <p>Calendar controls are not particularly useful for known dates and some users struggle with select boxes. We recommend using three fields as it's easier to reliably validate than a single field.</p>
+
+  <p>Don't automatically tab between fields, as this can be unexpected behaviour that clashes with normal keyboard controls, and confuses users.</p>
+
+  <p>Tip: If you want to trigger the num-pad on iPhones, add a pattern attribute to the input element like this: pattern="[0-9]*"</p>
+</div>
+-->
+
+{% endblock %}
