@@ -1,0 +1,68 @@
+// DISCUSSION
+
+// Mock styles for a discussion page
+
+.discussion{
+
+  .author{
+    margin-top: 0;
+    visibility: hidden;
+    @include core-14;
+    position: absolute;
+    display: block;
+    width: 200px;
+    left: -215px;
+    text-align: right;
+  }
+
+  .comment{
+    position: relative;
+    border-left: 5px solid transparent;
+    padding-left: 15px;
+    margin-left: -20px;
+  }
+
+  .quote{
+    .quote-text{
+      color: $secondary-text-colour;
+      @include core-16;
+      font-style: italic;
+    }
+    .author{
+      visibility: visible;
+    }
+    &.comment{
+      margin-left: 120px;
+      border-left: 3px solid $grey-3;
+    }
+  }
+
+  // Author colours
+
+  &:focus{
+    outline: none;
+    .author{
+      visibility: visible; 
+    }
+    .author-1{
+      border-color: $orange ;
+      .author a{
+        color: $orange;
+      }
+    }
+    .author-2{
+      border-color: $green ;
+      .author a{
+        color: $green;
+      }
+    }
+    .author-3{
+      border-color: $mauve ;    
+      .author a{
+        color: $mauve;
+      }
+    }
+  }
+
+
+}

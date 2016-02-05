@@ -36,18 +36,17 @@
 
   <div class="grid-row">
 
-
+{% if discuss %}
+    <div class="tabs-multi-page">
+      <p class="tab"><a href="./">Guide</a></p>
+      <h2 class="tab current">Discussion</h2>
+    </div>
+{% else %}
     <div class="tabs-multi-page">
       <h2 class="tab current">Guide</h2>
-      <p class="tab"><a href="discuss">Discuss</a></p>
+      <p class="tab"><a href="discuss">Discussion</a></p>
     </div>
-
-<!--
-    <div class="tabs-multi-page">
-      <p class="tab"><a href="">Guide</a></p>
-      <h2 class="tab current">Discuss</h2>
-    </div>
-  -->
+{% endif %}
 
   </div>
 
