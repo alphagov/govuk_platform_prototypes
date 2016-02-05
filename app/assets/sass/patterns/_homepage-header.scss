@@ -30,7 +30,9 @@
 // Search box in blue header bar
 #header-search{
 	@extend %contain-floats;
-    position: relative;
+  position: relative;
+
+  margin-top: 18px;
 
 	#search-main{
 		float: left;
