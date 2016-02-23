@@ -10,6 +10,15 @@
    background: $govuk-blue;
    padding: 45px 0;
    margin-bottom: 45px;
+
+   .breadcrumbs{
+    max-width: 990px;
+    margin: auto;
+    a{
+      color: white;
+    }
+   }
+
    .grid-row{
     max-width: 990px;
     margin: auto;
