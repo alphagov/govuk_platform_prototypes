@@ -1,0 +1,131 @@
+{% extends "layout-pattern.html" %}
+{% set discuss = true %}
+
+{% block pattern_content %}
+
+
+<h1 class="heading-large">
+  Dates
+</h1>
+
+<hr>
+
+<div class="grid-row">
+
+  <div class="column-two-thirds">
+    <div class="discussion" contenteditable=true>
+
+      <div class="comment author-3">
+        <p class="author"><a href="#">Joe L</a></p>
+
+        <h2 class="heading-medium">Date parsing</h2>
+
+        <p>One of our design principles is "do the hard work to make it simple". When asking for dates, we should be able to accept any format of non-ambiguous dates. For example, in a month field, we should be able to accept any of these to mean February, without any validation errors:</p>
+        
+        <ul class="list list-bullet">
+          <li>2</li>
+          <li>02</li>
+          <li>Feb</li>
+          <li>February</li>
+        </ul>
+
+      </div>
+
+      <div class="comment quote author-1">
+        <p class="author"><a href="#">Joe L</a></p>
+        <p class="quote-text">
+          As a general rule, shall we recommend liberal parsing of dates? For example, accepting all of 02, 2, Feb, February without validation errors.
+        </p>
+      </div>
+
+      <div class="comment quote author-2">
+        <p class="author"><a href="#">Tim P</a></p>
+        <p class="quote-text">
+          I think so. If we could offer the code to do it even better...
+        </p>
+      </div>
+
+      <div class="comment quote author-3">
+        <p class="author"><a href="#">Ed H</a></p>
+        <p class="quote-text">
+          Passports can probably share some of what we're using. My concern with liberal parsing is the increased risk where there's ambiguity. Feb is unambiguous, but a year of 14 is *somewhat* ambiguous.
+        </p>
+      </div>
+
+      <div class="comment quote author-1">
+        <p class="author"><a href="#">Joe L</a></p>
+        <p class="quote-text">
+          yeh I think we can give guidance on the non ambiguous cases, and suggest looking into ambiguous ones?
+        </p>
+      </div>
+
+      <div class="comment quote author-4">
+        <p class="author"><a href="#">Jeremy A</a></p>
+        <p class="quote-text">
+          If we are accepting more than just month numbers, are we also going to look at "1st", "2nd", "3rd" or "eighth"? This could also hold true for the day box.
+        </p>
+      </div>
+
+      <div class="comment quote author-3">
+        <p class="author"><a href="#">Ed H</a></p>
+        <p class="quote-text">
+          <a href="#">Jeremy Anderson</a> no reason we couldn't, but I've not observed any users entering digits like this.
+        </p>
+      </div>
+
+      <div class="comment quote author-4">
+        <p class="author"><a href="#">Jeremy A</a></p>
+        <p class="quote-text">
+          That's okay. One of the problems with going out of our way to cope with users' possible responses is it is hard to know when to stop! At the same time, case switching means that adding extra response handling would require very little work.
+        </p>
+      </div>
+
+      <div class="comment quote author-2">
+        <p class="author"><a href="#">Tim P</a></p>
+        <p class="quote-text">
+          A reason for accepting months as words is that some people (including myself) struggle to remember the numbers of the months! Obviously, there's no equivalent problem for days, so allowing 'th' and 'nd' doesn't help anyone
+        </p>
+      </div>
+
+      <div class="comment quote author-5">
+        <p class="author"><a href="#">Lee C</a></p>
+        <p class="quote-text">
+          What is the opinion on auto tabbing between fields for memorable dates? I've had a requirement to implement this but I'm concerned the users will not be able to anticipate the forced auto tab
+        </p>
+      </div>
+
+      <div class="comment quote author-3">
+        <p class="author"><a href="#">Ed H</a></p>
+        <p class="quote-text">
+         <a href="#">Lee Crossley</a> we avoid doing it. I believe it is bad for accessibility ( Tom Byers can confirm). It can reduce usability for users who are not expecting it. It also makes it harder to correct errors. The user need is to support people filling in the form, not filling it in *faster*.
+        </p>
+      </div>
+
+      <div class="comment quote author-5">
+        <p class="author"><a href="#">Lee C</a></p>
+        <p class="quote-text">
+          Thanks Ed, I agree.
+        </p>
+      </div>
+
+      <div class="comment quote author-1">
+        <p class="author"><a href="#">Joe L</a></p>
+        <p class="quote-text">
+          agree with Ed - this is something that mid or high skill users often ask for, but can be confusing for other users.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="column-third">
+
+    <ul class="list font-xsmall">
+      <li>Last updated: 4 minutes ago</li>
+    </ul>
+
+  </div>
+
+</div>
+
+{% endblock %}

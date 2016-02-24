@@ -10,6 +10,15 @@
    background: $govuk-blue;
    padding: 45px 0;
    margin-bottom: 45px;
+
+   .breadcrumbs{
+    max-width: 990px;
+    margin: auto;
+    a{
+      color: white;
+    }
+   }
+
    .grid-row{
     max-width: 990px;
     margin: auto;
@@ -30,7 +39,9 @@
 // Search box in blue header bar
 #header-search{
 	@extend %contain-floats;
-    position: relative;
+  position: relative;
+
+  //margin-top: 18px;
 
 	#search-main{
 		float: left;
