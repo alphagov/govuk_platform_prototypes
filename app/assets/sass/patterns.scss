@@ -14,9 +14,11 @@
 @import 'patterns/examples';
 @import 'patterns/tabs';
 @import 'patterns/discussion';
+@import 'patterns/standards';
 
 
-a[href="#"]:visited{
+a[href="#"]:visited,
+a.no-visited:visited{
   color: $link-colour;
 }
 
