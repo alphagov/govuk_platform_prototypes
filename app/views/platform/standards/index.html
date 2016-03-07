@@ -12,19 +12,8 @@
 
   <div class="grid-row">
 
-    <div class="column-third">
-        <h1>Standards</h1>
-    </div>
-
     <div class="column-two-thirds">
-
-      <form id="header-search" class="site-search" action="/platform/code-search" method="get" role="search">
-        <div class="header-search-content">
-          <label for="search-main">Search for products</label>
-          <input type="search" name="q" id="search-main" title="Search" class="js-search-focus"><input class="submit" type="submit" value="Search">
-        </div>
-      </form>
-
+        <h1>The Digital Service Standard</h1>
     </div>
 
   </div>
@@ -37,27 +26,127 @@
     <div class="column-half">
 
       <p class="lede section-description">
-        Products for identity, payments, notifications, web chat and more
-      </p> 
+        Government services are assessed against these 18 criteria.
+        <a href="#" class="bold-medium">Find out more</a>
+      </p>
 
-    </div>
-
-    <div class="column-one-quarter">
-      <span class="stat">6</span> products
-    </div>
-    <div class="column-one-quarter">
-      <span class="stat">1</span> org
-    </div>
-    <div class="column-one-quarter">
-      <span class="stat">76</span> services
     </div>
   </div>
 
   <hr>
 
-  <div class="browse-items grid-row">
-    {% include "includes/products-browse.html" %}
-  </div>
+  <h3 class="heading-medium">The criteria:</h3><br>
+
+  <ol class="list service-standard">
+    <li id="criterion-1">
+      <div class="point">
+        <h3 class="bold-medium"><a href="#">Start with user needs</a></h3>
+        Use research to develop a deep knowledge of who the service users are and what that means for the design of the service.
+      </div>
+    </li>
+    <li id="criterion-2">
+      <div class="point">
+        <h3 class="bold-medium"><a href="#">Create a research plan</a></h3>
+        Plan for ongoing user research and usability testing so you can continuously improve the service.
+      </div>
+    </li>
+    <li id="criterion-3">
+      <div class="point">
+        <h3 class="bold-medium"><a href="#">Create a multidisciplinary team</a></h3>
+        You have a team that can design, build and operate the service, led by a skilled, senior service manager with decision-making responsibility.
+      </div>
+    </li>
+    <li id="criterion-4">
+      <div class="point">
+        <h3 class="bold-medium"><a href="#">Be agile and user-centred</a></h3>
+        Develop the service using an agile, iterative and user-centred methodology.
+      </div>
+    </li>
+    <li id="criterion-5">
+      <div class="point">
+        <h3 class="bold-medium"><a href="#">Make continuous improvements</a></h3>
+        Make sure you have the capacity, resources and technical flexibility to iterate and improve your service on a regular basis.
+      </div>
+    </li>
+    <li id="criterion-6">
+      <div class="point">
+        <h3 class="bold-medium"><a href="#">Evaluate the technology choices</a></h3>
+        Evaluated the tools and systems that will be used to build, host, operate and measure the service, and how to procure them.
+      </div>
+    </li>
+    <li id="criterion-7">
+      <div class="point">
+        <h3 class="bold-medium"><a href="#">Evaluate security and privacy risks</a></h3>
+        Evaluate the user data that the service provides or stores and address any associated security, legal and privacy issues and risks. Consult with experts where appropriate.
+      </div>
+    </li>
+    <li id="criterion-8">
+      <div class="point">
+        <h3 class="bold-medium"><a href="#">Make things open</a></h3>
+        Make all new source code open and reusable, and publish it under appropriate licences. Provide a convincing explanation in cases where this can't be done.
+      </div>
+    </li>
+    <li id="criterion-9">
+      <div class="point">
+        <h3 class="bold-medium"><a href="#">Use open standards and platforms</a></h3>
+        Use open standards and common government platforms where available.
+      </div>
+    </li>
+    <li id="criterion-10">
+      <div class="point">
+        <h3 class="bold-medium"><a href="#">Test end-to-end</a></h3>
+        Test the service end-to-end in an environment identical to the live version, including on all common browsers and devices, and using dummy accounts and a representative sample of users.
+      </div>
+    </li>
+    <li id="criterion-11">
+      <div class="point">
+        <h3 class="bold-medium"><a href="#">Plan for downtime</a></h3>
+        Make a plan for the event of the digital service being taken temporarily offline.
+      </div>
+    </li>
+    <li id="criterion-12">
+      <div class="point">
+        <h3 class="bold-medium"><a href="#">Make it usable</a></h3>
+        Create a service that is simple and intuitive enough that users succeed first time.
+      </div>
+    </li>
+    <li id="criterion-13">
+      <div class="point">
+        <h3 class="bold-medium"><a href="#">Make it consistent</a></h3>
+        Build a service consistent with the user experience of the rest of GOV.UK including using the design patterns and style guide.
+      </div>
+    </li>
+    <li id="criterion-14">
+      <div class="point">
+        <h3 class="bold-medium"><a href="#">Encourage channel shift</a></h3>
+        Encourage all users to use the digital service (with assisted digital support if required), alongside an appropriate plan to phase out non-digital channels/services.
+      </div>
+    </li>
+    <li id="criterion-15">
+      <div class="point">
+        <h3 class="bold-medium"><a href="#">Measure performance</a></h3>
+        Use tools for analysis that collect performance data. Use this data to analyse the success of the service and to translate this into features and tasks for the next phase of development.
+      </div>
+    </li>
+    <li id="criterion-16">
+      <div class="point">
+        <h3 class="bold-medium"><a href="#">Establish KPI benchmarks</a></h3>
+        Identify performance indicators for the service, including the 4 mandatory key performance indicators (KPIs) defined in the manual. Establish a benchmark for each metric and make a plan to enable improvements.
+      </div>
+    </li>
+    <li id="criterion-17">
+      <div class="point">
+        <h3 class="bold-medium"><a href="#">Publish performance data</a></h3>
+        Report performance data on the Performance Platform.
+      </div>
+    </li>
+    <li id="criterion-18">
+      <div class="point">
+        <h3 class="bold-medium"><a href="#">Test with the minister</a></h3>
+        Test the service from beginning to end with the minister responsible for it.
+      </div>
+    </li>
+  </ol>
 
 
 
