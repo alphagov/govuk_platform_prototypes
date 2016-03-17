@@ -29,7 +29,6 @@ $step-height: 140px;
       .step-title{
         text-align: center;
         margin: 5px 0;
-        //display: none;
       }
       .govuk{
         background: $white;
@@ -113,7 +112,12 @@ $step-height: 140px;
         white-space: normal;
         text-align: left;
         box-sizing: border-box;
-        padding: 10px;
+        p{
+          padding: 10px;
+        }
+        img{
+          width: 100%;
+        }
       }
       .decision{
         background: $white;
