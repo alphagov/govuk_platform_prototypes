@@ -1,0 +1,142 @@
+$h-connector: $gutter * 1.5;
+$v-connector: $gutter * 1.5;
+$step-width: 100px;
+$step-height: 140px;
+
+
+.process-flow{
+  background: #dee0e2; // Same as footer grey
+  @extend %contain-floats;
+  border: 1px solid #a1acb2;
+  padding: $gutter $gutter 0;
+  margin-top: 45px;
+  width: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  .row{
+    @extend %contain-floats;
+    margin-bottom: $v-connector;
+    .step{
+      position: relative;
+      width: $step-width;
+      min-height: 171px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: $h-connector;
+      font-size: 16px;
+      .step-title{
+        text-align: center;
+        margin: 5px 0;
+      }
+      .govuk{
+        background: $white;
+        border: 2px solid $black;
+        border-top: 10px solid $black;
+        font-size: 16px;
+        color: $text-colour;
+        text-decoration: none;
+        &:hover{
+          outline: 4px solid $orange;
+        }
+      }
+      &.empty{
+        background: none;
+        border-color: transparent;
+        padding: 0;
+      }
+      &.h-connector{
+        background: none;
+        border-color: transparent;
+        padding: 0;
+        margin-right: 0;
+        width: $step-width + $h-connector;
+      }
+      &.connector-right:after{
+        display: block;
+        position: absolute;
+        top: 100px;
+        right: -$h-connector - 5;
+        content: "";
+        width: $h-connector + 3;
+        height: 0;
+        border: 1px solid $black;
+      }
+      &.connector-right-yes:after{
+        display: block;
+        position: absolute;
+        top: 100px;
+        right: -$h-connector - 5;
+        width: $h-connector + 3;
+        height: 0;
+        border: 1px solid $black;
+
+        // Yes label
+        content: "Yes";
+        text-indent: 3px;
+        line-height: 26px;
+      }
+      &.connector-bottom:before{
+        display: block;
+        position: absolute;
+        left: ($step-width / 2) - 1;
+        bottom: -$v-connector - 2;
+        width: 0;
+        height: $v-connector;
+        border: 1px solid $black;
+        content: "";
+      }
+      &.connector-bottom-no:before{
+        display: block;
+        position: absolute;
+        left: ($step-width / 2) - 1;
+        bottom: -$v-connector - 2;
+        width: 0;
+        height: $v-connector;
+        border: 1px solid $black;
+
+        // No label
+        content: "No";
+        text-indent: 5px;
+      }
+      .connector-middle{    
+        border-bottom: 2px solid #0b0c0c;
+        height: 100px;
+        margin-right: -4px;
+      }
+      .content{
+        display: block;
+        width: $step-width;
+        height: $step-height;
+        white-space: normal;
+        text-align: left;
+        box-sizing: border-box;
+        p{
+          padding: 10px;
+        }
+        img{
+          width: 100%;
+        }
+      }
+      .decision{
+        background: $grey-4;
+        border: 2px solid $black;
+        border-radius: 10px;
+        font-size: 16px;
+        color: $text-colour;
+        text-decoration: none;
+        display: table;
+        &:hover{
+          outline: 4px solid $orange;
+        }
+        p{       
+          display: table-cell;
+          vertical-align: middle;
+        }
+      }
+    }    
+  }
+
+
+}
