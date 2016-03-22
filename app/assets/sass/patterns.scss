@@ -69,8 +69,8 @@ hr{
   @include bold-36;
 }
 
-.column-quarter,
-.column-one-quarter {
+.column-sixth,
+.column-one-sixth {
   @include grid-column(1/6);
 }
 
