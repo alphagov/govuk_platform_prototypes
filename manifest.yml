@@ -1,3 +1,4 @@
 ---
 applications:
 - name: gaap-prototypes
+- buildpack: nodejs_buildpack
