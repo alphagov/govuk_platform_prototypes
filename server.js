@@ -9,6 +9,8 @@ var path = require('path'),
     config = require(__dirname + '/app/config.js'),
     port = (process.env.PORT || config.port),
     utils = require(__dirname + '/lib/utils.js'),
+    cfenv = require("cfenv"),
+    appEnv = cfenv.getAppEnv(),
 
 // Grab environment variables specified in Procfile or as Heroku config vars
     username = process.env.USERNAME,
@@ -21,6 +23,9 @@ var path = require('path'),
 if (env === 'production' && useAuth === 'true'){
     app.use(utils.basicAuth(username, password));
 }
+
+// Get service URL
+uri = appEnv.getServiceURL("gaap-prototypes");
 
 // Application settings
 app.set('view engine', 'html');
