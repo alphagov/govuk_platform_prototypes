@@ -24,8 +24,9 @@ if (env === 'production' && useAuth === 'true'){
     app.use(utils.basicAuth(username, password));
 }
 
-// Get service URL
+// GCloudFoundry configuration
 uri = appEnv.getServiceURL("gaap-prototypes");
+config.app.port = appEnv.port;
 
 // Application settings
 app.set('view engine', 'html');
