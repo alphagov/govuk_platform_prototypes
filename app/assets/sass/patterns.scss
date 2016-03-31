@@ -16,6 +16,7 @@
 @import 'patterns/discussion';
 @import 'patterns/standards';
 @import 'patterns/process-flows';
+@import 'patterns/pattern_header';
 
 
 a[href="#"]:visited,
@@ -57,7 +58,7 @@ hr{
     border: 5px solid #0b0c0c;
     border-width: 5px 0 0;
     height: 0;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .stat-bar{
@@ -69,8 +70,8 @@ hr{
   @include bold-36;
 }
 
-.column-quarter,
-.column-one-quarter {
+.column-sixth,
+.column-one-sixth {
   @include grid-column(1/6);
 }
 

@@ -1,0 +1,42 @@
+// PATTERN HEADER
+
+.pattern-header{
+  background: #2b8cc4;
+  padding: 0 30px;
+  margin: 0;
+  color: $white;
+  margin: 30px 0;
+
+  .headings{
+    overflow: hidden;
+    p{     
+      margin: 15px 0 20px;
+    }
+    .document-type{
+      margin: 75px 0 10px;
+      font-size: 27px;
+      line-height: 1.11111111;
+    }
+  }
+
+  h1{
+    margin-bottom: 60px;
+    font-size: 48px;
+    line-height: 1.04166667;
+    font-weight: bold;
+    margin: 5px 0 15px;
+  }
+
+
+
+  .in-page-navigation{
+    padding-bottom: 30px;
+    a{
+    color: $white;
+    } 
+    li{
+      list-style-type: none;
+    }
+  }
+
+}

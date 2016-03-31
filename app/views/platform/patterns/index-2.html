@@ -1,0 +1,254 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Design
+{% endblock %}
+
+{% import "includes/macros.html" as macro %}
+
+{% block content %}
+
+
+<div class="full-width-container">
+
+  <div class="grid-row">
+
+    <div class="column-third">
+        <h1>Design resources</h1>
+    </div>
+
+    <div class="column-two-thirds">
+
+      <form id="header-search" class="site-search" action="/platform/patterns/search" method="get" role="search">
+        <div class="header-search-content">
+          <label for="search-main">Search design resources</label>
+          <input type="search" name="q" id="search-main" title="Search" class="js-search-focus"><input class="submit" type="submit" value="Search">
+        </div>
+      </form>
+
+    </div>
+
+  </div>
+
+</div>
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-third">
+
+      <p class="lede section-description">
+        Principles, style guides, templates and patterns
+      </p> 
+
+    </div>
+
+<!--
+    <div class="column-one-quarter">
+      <span class="stat">87</span> patterns
+    </div>
+    <div class="column-one-quarter">
+      <span class="stat">465</span> downloads
+    </div>
+  -->
+  </div>
+
+  <hr>
+
+
+  <div class="grid-row">
+    <div class="column-third">
+
+      <h2 class="heading-medium">
+        <a href="#">Design principles</a>
+      </h2>
+
+      <p>10 principles for designing user centred public services</p>
+
+    </div>
+    <div class="column-third">
+
+      <h2 class="heading-medium">
+        <a href="#">Style guides</a>
+      </h2>
+
+      <p>Grids, typography, colours, forms, icons, tables, lists and more</p>
+
+
+    </div>
+    <div class="column-third">
+
+      <h2 class="heading-medium">
+        <a href="#">Page templates</a>
+      </h2>
+
+      <p>Headers, footers and templates for common page formats</p>
+
+    </div>
+  </div>
+
+  <hr>
+
+  <h2 class="heading-medium">Design patterns</h2>
+
+  <div class="grid-row">
+    <div class="column-third">
+
+      <h2 class="heading-medium">
+        Transactions
+      </h2>
+
+<!--
+      <p class="bold-small"><a href="#">How to structure transactions</a></p>
+    -->
+
+      <ul class="list font-xsmall">
+        <li><a href="#">Register something</a></li>
+        <li><a href="#">Apply for permission</a></li>
+        <li><a href="#">Apply for funding</a></li>
+        <li><a href="#">Exchange ownership</a></li>
+        <li><a href="#">Delegate responsibility</a></li>
+        <li><a href="#">Check compliance</a></li>
+      </ul>
+
+    </div>
+    <div class="column-third">
+
+      <h2 class="heading-medium">
+        Page templates
+      </h2>
+
+      <ul class="list font-xsmall">
+        <li><a href="#">Start page</a></li>
+        <li><a href="#">Overview page</a></li>
+        <li><a href="#">Question page</a></li>
+        <li><a href="#">Check your answers page</a></li>
+        <li><a href="#">Confirmation page</a></li>
+        <li><a href="#">Progress indicators</a></li>
+        <li><a href="#">Save and cancel</a></li>
+        <li><a href="#">Back and continue</a></li>
+      </ul>
+
+    </div>
+    <div class="column-third">
+
+      <h2 class="heading-medium">
+        Help and feedback
+      </h2>
+
+      <ul class="list font-xsmall">
+        <li><a href="#">How to help users</a></li>
+        <li><a href="#">Help text</a></li>
+        <li><a href="#">Web chat</a></li>
+        <li><a href="#">Telephone support</a></li>
+        <li><a href="#">Feedback forms</a></li>
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-third">
+
+      <h2 class="heading-medium">
+        Forms
+      </h2>
+      
+      <p><a href="#" class="bold-xsmall">Form structure</a></p>
+
+      <ul class="list font-xsmall">
+        <li><a href="#">Text fields</a></li>
+        <li><a href="#">Radios and checkboxes</a></li>
+        <li><a href="#">Select boxes</a></li>
+        <li><a href="#">Buttons</a></li>
+        <li><a href="#">Type-ahead</a></li>
+        <li><a href="#">Names</a></li>
+        <li><a href="#">Addresses</a></li>
+        <li><a href="#">Phone numbers</a></li>
+        <li><a href="#">Email addresses</a></li>
+        <li><a href="#">Credit card details</a></li>
+        <li><a href="#">Dates and times</a></li>
+        <li><a href="#">Form validation</a></li>
+        <li><a href="#">Error messages</a></li>
+        <li><a href="#">Add, edit, delete</a></li>
+      </ul>
+
+    </div>
+    <div class="column-third">
+
+      <h2 class="heading-medium">
+        Content and navigation
+      </h2>
+
+      <p><a href="#" class="bold-xsmall">Writing for services</a></p>
+
+      <ul class="list font-xsmall">
+        <li><a href="#">Links</a></li>
+        <li><a href="#">Pagination</a></li>
+        <li><a href="#">Breadcrumbs</a></li>
+        <li><a href="#">Page contents</a></li>
+        <li><a href="#">Accordions</a></li>
+        <li><a href="#">Tabs</a></li>
+        <li><a href="#">Tables</a></li>
+        <li><a href="#">Lists</a></li>
+        <li><a href="#">Video</a></li>
+        <li><a href="#">Meta data</a></li>
+        <li><a href="#">Uploading files</a></li>
+        <li><a href="#">Downloading files</a></li>
+        <li><a href="#">Progressive disclosure</a></li>
+        <li><a href="#">Gender and sex</a></li>
+      </ul>
+
+    </div>
+    <div class="column-third">
+
+      <h2 class="heading-medium">
+        Accounts and identity
+      </h2>
+
+      <p><a href="#" class="bold-xsmall">User accounts</a></p>
+
+      <ul class="list font-xsmall">
+        <li><a href="#">Create an account</a></li>
+        <li><a href="#">Email verification</a></li>
+        <li><a href="#">Usernames</a></li>
+        <li><a href="#">Passwords</a></li>
+        <li><a href="#">Signing in</a></li>
+        <li><a href="#">Signing out</a></li>
+        <li><a href="#">Account recovery</a></li>
+        <li><a href="#">2 factor authentication</a></li>
+        <li><a href="#">Knowldege based verification</a></li>
+        <li><a href="#">Account preferences</a></li>
+        <li><a href="#">Permissions</a></li>
+      </ul>
+
+    </div>
+  </div>
+  <div class="grid-row">
+    <div class="column-third">
+
+      <h2 class="heading-medium">
+        Search and browse
+      </h2>
+
+      <ul class="list font-xsmall">
+        <li><a href="#">Search box</a></li>
+        <li><a href="#">Search results</a></li>
+        <li><a href="#">Search filters</a></li>
+        <li><a href="#">Browse pages</a></li>
+      </ul>
+
+    </div>
+    <div class="column-third">
+
+    </div>
+    <div class="column-third">
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
+
+

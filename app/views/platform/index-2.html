@@ -1,0 +1,213 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Resources for service teams
+{% endblock %}
+
+{% block content %}
+
+<div class="full-width-container">
+
+  <div class="grid-row">
+
+    <div class="column-third">
+      <h1>Resources for service teams</h1>
+    </div>
+
+    <div class="column-two-thirds">
+
+      <form id="header-search" class="site-search" action="/search" method="get" role="search">
+        <div class="header-search-content">
+          <label for="search-main">Search resources</label>
+          <input type="search" name="q" id="search-main" title="Search" class="js-search-focus"><input class="submit" type="submit" value="Search">
+        </div>
+      </form>
+
+    </div>
+
+  </div>
+
+</div>
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <p class="lede section-description">
+        Resources for teams building services <br>with government data.
+        <a href="/platform/about" class="bold-medium">Find out more</a>
+      </p> 
+
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="grid-row">
+
+    <div class="column-one-quarter">
+
+      <div class="browse-item">
+        <h3 class="heading-medium">
+          <a href="/platform/code" class="no-visited">Code</a>
+        </h3>
+        <p>Open source libraries, apps and components</p>
+      </div>
+
+    </div>
+
+    <div class="column-one-quarter">
+
+      <div class="browse-item">
+        <h3 class="heading-medium">
+          <a href="/platform/data" class="no-visited">Data</a>
+        </h3>
+        <p>Government data sets, registers and APIs</p>
+      </div>
+
+    </div>
+
+    <div class="column-one-quarter">
+
+      <div class="browse-item">
+        <h3 class="heading-medium">
+          <a href="/platform/patterns" class="no-visited">Design</a>
+        </h3>
+
+        <p>Style guides, patterns <br>and page templates</p>
+
+      </div>
+
+    </div>
+
+
+    <div class="column-one-quarter">
+
+      <div class="browse-item">
+        <h3 class="heading-medium">
+          <a href="/platform/products" class="no-visited">Products</a>
+        </h3>
+        <p>Identity, payments, notifications and more</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <hr>
+
+  <h2 class="heading-medium">
+    Featured product
+  </h2>
+
+  <div class="grid-row featured-item">
+
+    <div class="column-one-half featured-item-image">
+
+      <img src="/public/images/Verify_Pic.jpg" class="featured-image" />
+
+    </div>
+
+    <div class="column-one-half featured-item-description">
+
+      <h3 class="heading-medium">
+        GOV.UK Verify
+      </h3>
+
+      <p>GOV.UK Verify is the new way to prove who you are online, so people can use government services like viewing their driving licence or filing their tax.</p>
+
+      <ul class="list">
+        <li><strong class="bold-small">35</strong> services using this product</li>
+        <li><strong class="bold-small">78,349</strong> identities verified in the last 7 days</li>
+      </ul>
+
+      <ul class="list">
+        <li class="bold-small"><a href="#">Find out more about GOV.UK Verify</a></li>
+        <li><a href="/platform/products">Browse all products</a></li>
+      </ul>
+
+    </div>
+
+  </div>
+
+  <hr>
+
+  <h2 class="heading-medium">
+    Featured pattern
+  </h2>
+
+  <div class="grid-row featured-item">
+
+    <div class="column-one-half featured-item-image">
+
+      <img src="/public/images/placeholder.png" class="featured-image" />
+
+    </div>
+
+    <div class="column-one-half featured-item-description">
+
+      <h3 class="heading-medium">
+        Grant a licence
+      </h3>
+
+      <p>Use the licence pattern where you want to be able to grant users permission to do something or own something.</p>
+
+      <ul class="list">
+        <li><strong class="bold-small">16</strong> services using this pattern</li>
+        <li><strong class="bold-small">452</strong> licences granted in the last 7 days</li>
+      </ul>
+
+
+      <ul class="list">
+        <li class="bold-small"><a href="#">Find out more about the Licence pattern</a></li>
+        <li><a href="#">Browse all patterns</a></li>
+      </ul>
+
+    </div>
+
+  </div>
+
+    <hr>
+
+  <h2 class="heading-medium">
+    Featured code
+  </h2>
+
+  <div class="grid-row featured-item">
+
+    <div class="column-one-half featured-item-image">
+
+      <img src="/public/images/Prototype_Pic.png" class="featured-image" />
+
+    </div>
+
+    <div class="column-one-half featured-item-description">
+
+      <h3 class="heading-medium">
+        GOV.UK Prototype kit
+      </h3>
+
+      <p>Node - Express app for rapid HTML prototyping. Contains examples of all the common GOV.UK page templates, styles and patterns.</p>
+
+      <ul class="list">
+        <li><strong class="bold-small">45</strong> downloads in the last 7 days</li>
+        <li>Updated 2 days ago</li>
+      </ul>
+
+      <ul class="list">
+        <li class="bold-small"><a href="#">Find out more about the kit</a></li>
+        <li><a href="#">Browse all code</a></li>
+      </ul>
+
+    </div>
+
+  </div>
+
+  <p><br><br><br>[ And so on... ]</p>
+
+</main>
+
+{% endblock %}
+
+
