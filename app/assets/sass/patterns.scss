@@ -17,6 +17,8 @@
 @import 'patterns/standards';
 @import 'patterns/process-flows';
 @import 'patterns/pattern_header';
+@import 'patterns/full-width';
+@import 'patterns/left-navigation';
 
 
 a[href="#"]:visited,
@@ -73,6 +75,12 @@ hr{
 .column-sixth,
 .column-one-sixth {
   @include grid-column(1/6);
+}
+
+.column-180{
+  width: 180px;    
+  //padding: 0 15px;
+  float: left;
 }
 
 .browse-items,

@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Design
+{% endblock %}
+
+{% import "includes/macros.html" as macro %}
+
+{% block content %}
+
+
+<div class="full-width-container">
+
+  <div class="grid-row">
+
+    <div class="column-third">
+        <h1>Design resources</h1>
+    </div>
+
+    <div class="column-two-thirds">
+
+      <form id="header-search" class="site-search" action="/platform/patterns/search" method="get" role="search">
+        <div class="header-search-content">
+          <label for="search-main">Search design resources</label>
+          <input type="search" name="q" id="search-main" title="Search" class="js-search-focus"><input class="submit" type="submit" value="Search">
+        </div>
+      </form>
+
+    </div>
+
+  </div>
+
+</div>
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-third">
+
+      <p class="lede section-description">
+        Design great public services.
+      </p> 
+
+    </div>
+
+  </div>
+
+  <hr>
+
+
+  <div class="grid-row">
+    <div class="column-third">
+
+      <h2 class="heading-medium">
+        <a href="/platform/design/design-principles">Design principles</a>
+      </h2>
+
+      <p>10 principles for designing user centred public services</p>
+
+    </div>
+    <div class="column-third">
+
+      <h2 class="heading-medium">
+        <a href="/platform/design/design-patterns">Design patterns</a>
+      </h2>
+
+      <p>Service patterns, interaction patterns and design guides</p>
+
+    </div>
+    <div class="column-third">
+
+      <h2 class="heading-medium">
+        <a href="/platform/design/style-guide">Style guide</a>
+      </h2>
+
+      <p>Grids, typography, colours, forms, icons, tables, pages and more</p>
+
+
+    </div>
+  </div>
+
+  <hr>
+</main>
+
+{% endblock %}
+
+

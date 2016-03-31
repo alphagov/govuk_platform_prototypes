@@ -1,0 +1,34 @@
+.full-width{
+  #global-header .header-wrapper,
+  #global-header-bar, 
+  #global-cookie-message p,
+  #content,
+  #footer .footer-wrapper{
+    max-width: 100%;
+  }
+
+  #content, 
+  #global-header-bar{
+        margin: 0 30px;
+  }
+}
+
+
+.sticky-header{
+
+  #global-header,
+  #global-header-bar{
+    position: fixed;
+      z-index: 900;
+  }
+
+  #global-header-bar{
+      top: 53px;
+      width: 100%;
+  }
+
+  #content{
+    padding-top: 63px;
+  }
+
+}
